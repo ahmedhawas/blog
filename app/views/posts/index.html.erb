@@ -1,0 +1,8 @@
+String Press
+<%= link_to "Create New Post", "/posts/new" %>
+
+<ul>
+<% @posts.each do |post| %>
+	<li> <%= link_to post.title, post %> </li>
+<%end%>
+</ul>
